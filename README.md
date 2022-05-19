@@ -13,7 +13,8 @@ Time to test our app!
 7. Add another **unit** test for `get_arithmetic_result`, and validate the correct outputs.
    - You are **NOT** allowed to have the `get_operator` function completed yet, instead you must `mock` your `get_operator` function. Have a look at `mocking` [here](https://docs.python.org/3/library/unittest.mock.html) and [here](https://realpython.com/python-mock-library/).
    - If you do not mock the `get_operator` function, then this would be considered an integration test.
-8. Add an integration test for the `main` function:
+8. Add logic for `get_operator` in `utils.py`.
+9. Add an integration test for the `main` function:
    - Your test should validate the return code (`0` is successful exits and `1` is error exits).
    - If the CLI was successful (and you expected it to be successful), then validate the answer is correct using `capsys` and the `in` operator for the captured output.
    - If the CLI was unsuccessful and you expected it to be unsuccessful, then no further assertions are required (hint: successful tests assertions should be in separate testing function than the error test assertions).
